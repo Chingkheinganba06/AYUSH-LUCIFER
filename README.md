@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://coolwallpapers.me/5045071-anime-blonde-blue-eyes-chitoge-kirisaki-nisekoi.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe70BpcWIpD4gIjNduYnAyIj5U5JjY8pdp8g&usqp=CAU" alt="Cara" border="0"></a>
+  <a href="https://coolwallpapers.me/5045071-anime-blonde-blue-eyes-chitoge-kirisaki-nisekoi.html"><img src="https://i.ibb.co/mNFxB0T/f23a50dd-cd79-4603-b3ab-01c392468563.jpg" alt="Cara" border="0" style="width:380px;height:160px;"></a>
 
 # <h1><er>Cara is a modified version of <a href="https://github.com/ShineiIchijo/Chitoge">Chitoge</er></a></h1>
 
@@ -14,6 +14,8 @@
 <h1>Cara is full of Anime and Nsfw and many more features</h1>
 </div>
 
+## 🍃 Official group-> http://gg.gg/Arus-Das-cara
+
 ## ✨ Highlights
 
 -   Fully Modular Design
@@ -26,7 +28,7 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+    [Cara-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
