@@ -16,19 +16,27 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-        if (!parsedArgs.joined) {
-            const commands = this.handler.commands.keys()
-            const categories: { [key: string]: ICommand[] } = {}
-            for (const command of commands) {
-                const info = this.handler.commands.get(command)
-                if (!command) continue
-                if (!info?.config?.category) continue
-                if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
-                else {
-                    categories[info.config.category] = []
-                    categories[info.config.category].push(info)
-                }
-            }
+        let chitoge = n[Math.floor(Math.random() * n.length)]
+	if (!parsedArgs.joined) {
+			const commands = this.handler.commands.keys();
+			const categories: { [key: string]: ICommand[] } = {};
+			for (const command of commands) {
+				const info = this.handler.commands.get(command);
+				if (!command) continue;
+				if (!info?.config?.category || info.config.category === "dev") continue;
+				if (
+					!info?.config?.category ||
+					(info.config.category === "nsfw" &&
+						!(await this.client.getGroupData(M.from)).nsfw)
+				)
+					continue;
+				if (Object.keys(categories).includes(info.config.category))
+					categories[info.config.category].push(info);
+				else {
+					categories[info.config.category] = [];
+					categories[info.config.category].push(info);
+				}
+			}
             let text = `🍃 Cara\'s Command List 🍃\n--> Official group:-  http://gg.gg/Arus-Das-cara\n\n💡 *Prefix:* " */* "\n\n`
             const keys = Object.keys(categories).sort((a, b) => a.localeCompare(b))
             for (const key of keys)
