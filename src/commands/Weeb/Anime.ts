@@ -30,7 +30,7 @@ if (!data.results[0].title) return void M.reply( await request.buffer(`https://w
                     undefined,
                     `404 Error can not find the anime *${chitoge}*`,
                     undefined
-                )
+                );
         const buffer = await request.buffer(data.results[0].image_url).catch((e) => {
             return void M.reply(e.message)
         })
