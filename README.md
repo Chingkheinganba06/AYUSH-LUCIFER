@@ -1,5 +1,5 @@
 <div align="center">
-
+ <a href="https://imgbb.me/-anime.itachiuchiha.html"><img src="https://i.ibb.co/DkvtKHV/mafia9999sungur9999-sungur9999.gif" alt="chitoge" border="0"></a>
 # <h1><er>AYUSH-LUCIFER is a modified version of <a href="https://github.com/monarch21/AYUSH-BOT">AYUSH-BOT</er></a></h1>
 
 ## [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/E5CwW1dAXjRKE3XuLXxF8J)<br> [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) <br>[![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
