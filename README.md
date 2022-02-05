@@ -25,12 +25,12 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Cara-Guides](https://github.com/monarch21/AYUSH-LUCIFER-GUIDES/blob/main/README.md)
+    [AYUSH-LUCIFER-Guides](https://github.com/monarch21/AYUSH-LUCIFER-GUIDES/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Chitoge_featuresList.md](https://github.com/monarch21/AYUSH-LUCIFER/blob/main/Features.md)
+    here➡️[AYUSH-LUCIFER_featuresList.md](https://github.com/monarch21/AYUSH-LUCIFER/blob/main/Features.md)
 
 ## 💪 Contribution
 
