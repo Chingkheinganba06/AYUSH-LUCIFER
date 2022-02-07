@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
             description: 'activate certain features on group-chats',
             category: 'moderation',
             usage: `${client.config.prefix}activate [events | mod | safe |  cmd | invitelink]`,
+            modsOnly:true,
             baseXp: 0
         })
     }
