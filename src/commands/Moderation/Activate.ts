@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             category: 'moderation',
             usage: `${client.config.prefix}activate [events | mod | safe |  cmd | invitelink]`,
             modsOnly:true,
-            baseXp: 0
+            baseXp: 900000
         })
     }
 
