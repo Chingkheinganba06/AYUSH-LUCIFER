@@ -31,6 +31,9 @@
 
 -   To view all features, click
     here➡️[AYUSH-LUCIFER_featuresList.md](https://github.com/monarch21/AYUSH-LUCIFER/blob/main/Features.md)
+## 🍥 API KEYS
+-   To view all API, click
+    here➡️[AYUSH-LUCIFER_API.md](https://github.com/monarch21/AYUSH-LUCIFER/blob/main/MYAPI.md)
 
 ## 💪 Contribution
 
