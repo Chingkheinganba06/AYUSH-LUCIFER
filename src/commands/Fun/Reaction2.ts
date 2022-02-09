@@ -17,7 +17,10 @@ export default class Command extends BaseCommand {
                 'flirting',
                 'embarrassed',
                 'happybirthday',
-                'stressed'
+                'stressed',
+                'surprise',
+                'angry'
+                'glare'
             ],  
             category: 'fun',
             usage: `${client.config.prefix}(reaction) [tag/quote users]\nExample: ${client.config.prefix}lazy`,
@@ -40,7 +43,10 @@ export default class Command extends BaseCommand {
           flirting: ['flirting with'],
           embarrassed: ['too embarrasing'],
           happybirthday: ['happy birthday to you from all of us side we wish you achieve every goal in your life'],
-          stressed: ['too stressed']
+          stressed: ['too stressed'],
+          surprise : ['a surprise for you'],
+          angry : ['angry at '],
+          glare : ['glaring at ']
         } as unknown as { [key: string]: string[] }
         // take the first argument and make it lowercase
         const term = flag ? joined.split(' ')[0].toLowerCase() : action
@@ -80,7 +86,7 @@ export default class Command extends BaseCommand {
             [M.sender.jid, ...M.mentioned],
             `*@${M.sender.jid.split('@')[0]} ${grammar} ${M.mentioned
                 .map((user) => (user === M.sender.jid ? 'Themselves' : `@${user.split('@')[0]}`))
-                .join(', ')}*`
+                .join(',')}*`
         )
     }
 }
