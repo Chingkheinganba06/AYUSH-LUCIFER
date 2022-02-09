@@ -1,5 +1,3 @@
-/** @format */
-
 import MessageHandler from "../../Handlers/MessageHandler";
 import BaseCommand from "../../lib/BaseCommand";
 import WAClient from "../../lib/WAClient";
@@ -55,9 +53,9 @@ export default class Command extends BaseCommand {
 		} else if (exp < 75000) {
 			role = "🌀 Hero";
 		} else if (exp < 100000) {
-			role = "💎 Supreme") {
-		} else if (exp < 200000); {
-			role = "❄️ Mystic";
+			role = "💎 Supreme";
+		} else if (exp < 200000) {
+			role = "❄️ Mystic"; 
         	} else {
 			role = "👑😎 God";
 		}
@@ -82,7 +80,7 @@ export default class Command extends BaseCommand {
 		} else if (exp < 100000) {
 			level = 9;
 		} else if (exp < 200000) {
-			level = 10;
+			level = 10; 
 		} else {
 			level = 0 ;
 		}
