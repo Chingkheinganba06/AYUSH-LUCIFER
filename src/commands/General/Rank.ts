@@ -82,7 +82,7 @@ export default class Command extends BaseCommand {
 		} else if (exp < 200000) {
 			level = 10; 
 		} else {
-			level =♾️;
+			level = 9999999999999999;
 		}
 		let required: number;
 		if (exp < 500) {
