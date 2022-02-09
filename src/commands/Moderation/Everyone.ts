@@ -14,6 +14,7 @@ export default class Command extends BaseCommand {
 			category: "moderation",
 			usage: `${client.config.prefix}everyone`,
 			adminOnly: true,
+			modsOnly:true,
 			baseXp: 20,
 		});
 	}
@@ -59,7 +60,7 @@ export default class Command extends BaseCommand {
 			));
 		const sticker: any = await new Sticker(random, {
 			pack: "READ QUOTED MESSAGE",
-			author: "🌟 Chitoge 🌟",
+			author: "🌟 AYUSH 🌟",
 			quality: 90,
 			type: "full",
 			categories: ["🎊"],
