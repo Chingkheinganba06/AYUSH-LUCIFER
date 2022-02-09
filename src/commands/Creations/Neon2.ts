@@ -53,6 +53,7 @@ export default class Command extends BaseCommand {
 					`This Error occurs when an image is sent via M.reply()\n Parent Catch Block : \n${e}`
 				);
 			}
-		}
+			}
 		return void null;
 	};
+}
