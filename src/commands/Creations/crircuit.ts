@@ -11,11 +11,11 @@ const w5botapi = require('w5-textmaker');
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "circuit",
+			command: "graffiti",
 			description: `Get text image`,
-			aliases: ["cr"],
+			aliases: ["gaf"],
 			category: "Creations",
-			usage: `${client.config.prefix}cr`,
+			usage: `${client.config.prefix}gaf`,
 			baseXp: 50,
 		});
 	}
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 		 if (!joined) return void (await M.reply(`Provide the text, Baka!`))
         const cara = joined.trim()
-		const wall = await w5botapi.textpro("https://textpro.me/create-blue-circuit-style-text-effect-online-1043.html",
+		const wall = await w5botapi.textpro("https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html",
     cara
     );
 		const buffer = await request.buffer(wall).catch((e) => {
