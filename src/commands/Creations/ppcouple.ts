@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: 'ppcouple',
             description: `sends you matching pfp.`,
             aliases: ['matchpfp','pp'],
-            category: 'creator',
+            category: 'Creations',
             usage: `${client.config.prefix}pp`,
             baseXp: 50
         })
