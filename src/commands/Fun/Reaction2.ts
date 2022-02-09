@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
         // Access raw text of message
         const action = M.content?.split(' ')[0].slice(1).toLowerCase() || ''
         let flag = true
-        if (!(action === 'r' || action === 'react')) {
+        if (!(action === 'r2' || action === 'react')) {
             flag = false
         }
         const Reactions = {
