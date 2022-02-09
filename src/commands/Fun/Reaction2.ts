@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
           request: ['requesting please to '],
           flirting: ['flirting with'],
           embarrassed: ['too embarrasing'],
-          happybirthday: ['happy birthday to you from all of us side we wish you achieve every goal in your life'],
+          happybirthday: ['HAPPY BIRTHDAY DEAR 🥳🥧🥰'],
           stressed: ['too stressed'],
           surprise : ['a surprise for you'],
           angry : ['angry at ']
