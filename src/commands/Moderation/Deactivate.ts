@@ -12,7 +12,6 @@ export default class Command extends BaseCommand {
             description: 'deactivate certain features on group-chats',
             category: 'moderation',
             usage: `${client.config.prefix}deactivate [feature]`,
-            modsOnly:true,
             baseXp: 90000
         })
     }
