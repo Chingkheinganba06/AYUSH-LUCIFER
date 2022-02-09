@@ -11,9 +11,9 @@ const w5botapi = require('w5-textmaker');
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "avenger",
+			command: "blood",
 			description: `Get text image`,
-			aliases: ["ave"],
+			aliases: ["blood"],
 			category: "Creations",
 			usage: `${client.config.prefix}ave`,
 			baseXp: 50,
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 		 if (!joined) return void (await M.reply(`Provide the text, Baka!`))
         const cara = joined.trim()
-		const wall = await w5botapi.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html",
+		const wall = await w5botapi.textpro("https://textpro.me/blood-text-on-the-frosted-glass-941.html",
     cara
     );
 		const buffer = await request.buffer(wall).catch((e) => {
