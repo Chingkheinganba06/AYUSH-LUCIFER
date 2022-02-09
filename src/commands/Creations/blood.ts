@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
 			description: `Get text image`,
 			aliases: ["blood"],
 			category: "Creations",
-			usage: `${client.config.prefix}ave`,
+			usage: `${client.config.prefix}blood`,
 			baseXp: 50,
 		});
 	}
