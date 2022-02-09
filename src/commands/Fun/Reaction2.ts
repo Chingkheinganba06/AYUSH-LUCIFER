@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
                 'stressed',
                 'surprise',
                 'angry',
-                'surprised'
+                'glare'
             ],  
             category: 'fun',
             usage: `${client.config.prefix}(reaction) [tag/quote users]\nExample: ${client.config.prefix}lazy`,
@@ -46,7 +46,7 @@ export default class Command extends BaseCommand {
           stressed: ['too stressed'],
           surprise : ['a surprise for you'],
           angry : ['angry at '],
-          surprise:['surprised']
+          glare:['glaring at ']
         } as unknown as { [key: string]: string[] }
         // take the first argument and make it lowercase
         const term = flag ? joined.split(' ')[0].toLowerCase() : action
