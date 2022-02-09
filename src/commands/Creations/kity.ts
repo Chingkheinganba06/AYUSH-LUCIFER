@@ -10,11 +10,11 @@ import { MessageType } from '@adiwajshing/baileys'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'kitten','kity',
+            command: 'kity',
             description: `Will send you random kitten image.`,
             aliases: ['cat','kity'],
             category: 'Creations',
-            usage: `${client.config.prefix}kitten `,
+            usage: `${client.config.prefix}kity`,
             baseXp: 50
         })
     }
