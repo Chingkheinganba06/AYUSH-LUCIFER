@@ -40,8 +40,8 @@ export default class Command extends BaseCommand {
 				}
 			}
 			let text = `👋🏻 (💙ω💙) Konichiwa! *@${
-				user.split("@")[0]
-			}*,━❰I'm AYUSH a whatsapp bot*tell me how can i help you?❱━\n*it's my official group*\n*https://chat.whatsapp.com/E5CwW1dAXjRKE3XuLXxF8J*\n\nMy prefix is - "${
+			user.split("@")[0]
+			}\n━❰I'm AYUSH a whatsapp bot tell me how can i help you?❱━\n*it's my official group*\n*https://chat.whatsapp.com/E5CwW1dAXjRKE3XuLXxF8J*\n\nMy prefix is - "${
 				this.client.config.prefix
 			}"\n\nThe usable commands are listed below.\n\n`;
 			const keys = Object.keys(categories);
