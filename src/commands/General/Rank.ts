@@ -84,7 +84,7 @@ export default class Command extends BaseCommand {
 		} else if (exp < 200000) {
 			level = 10;
 		} else {
-			level ="♾️";
+			level = 0 ;
 		}
 		let required: number;
 		if (exp < 500) {
@@ -106,7 +106,8 @@ export default class Command extends BaseCommand {
 		} else if (exp < 100000) {
 			required = 100000;
 		} else if (exp < 2000000) {
-		} else {
+		        required = 100000;
+		} else { 
 			required = 0;
 		}
 		const rank = new Canvacord.Rank()
