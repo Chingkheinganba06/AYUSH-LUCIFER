@@ -11,11 +11,11 @@ const w5botapi = require('w5-textmaker');
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "cloud",
+			command: "beach",
 			description: `Get text image`,
-			aliases: ["cloud"],
+			aliases: ["beach"],
 			category: "Creations",
-			usage: `${client.config.prefix}cloud`,
+			usage: `${client.config.prefix}beach`,
 			baseXp: 50,
 		});
 	}
@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 		 if (!joined) return void (await M.reply(`Provide the text, Baka!`))
         const cara = joined.trim()
-		const wall = await w5botapi.textpro("https://textpro.me/create-realistic-cloud-text-effect-online-free-999.html",
+		const wall = await w5botapi.textpro("https://textpro.me/sand-engraved-3d-text-effect-989.html",
     cara
     );
 		const buffer = await request.buffer(wall).catch((e) => {
