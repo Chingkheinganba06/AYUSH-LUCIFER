@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
                 'stressed'
             ],  
             category: 'fun',
-            usage: `${client.config.prefix}(reaction) [tag/quote users]\nExample: ${client.config.prefix}pat`,
+            usage: `${client.config.prefix}(reaction) [tag/quote users]\nExample: ${client.config.prefix}lazy`,
             baseXp: 10
         })
     }
@@ -51,7 +51,7 @@ export default class Command extends BaseCommand {
             // if index is multiple of 3, add a new line, else give 10 - length of the reaction spaces
             // index % 3 === 2 ? (text += '\n') : (text += ' '.repeat(10 - reaction.length))
         })
-        text += `🎀 *Usage:* ${this.client.config.prefix}(reaction) [tag/quote users]\nExample: ${this.client.config.prefix}pat`
+        text += `🎀 *Usage:* ${this.client.config.prefix}(reaction) [tag/quote users]\nExample: ${this.client.config.prefix}lazy`
         if (flag) {
             if (!term) return void M.reply(`🪧 *OPTIONS:*\n${text}`)
             if (!Object.keys(Reactions).includes(term))
