@@ -10,11 +10,10 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "everyone",
 			description: "Tags all users in group chat",
-			aliases: ["all", "tagall", "ping"],
+			aliases: ["all", "tagall", "ping","hey"],
 			category: "moderation",
 			usage: `${client.config.prefix}everyone`,
 			adminOnly: true,
-			modsOnly:true,
 			baseXp: 20,
 		});
 	}
