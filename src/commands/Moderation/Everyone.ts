@@ -49,7 +49,7 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(
 				`${
 					M.groupMetadata?.subject || "*EVERYONE*"
-				}\n*READ QUOTED MESSAGE*\n*[TAGGED MAGICALLY]*`,
+				}\n*ALL YOU STUPID ASSHOLES*\n*[come here and talk]*`,
 				undefined,
 				undefined,
 				M.groupMetadata?.participants.map((user) => user.jid)
