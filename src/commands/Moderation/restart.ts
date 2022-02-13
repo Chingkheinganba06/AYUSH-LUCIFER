@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
             command: 'restart',
             description: `test`,
             aliases: ['restart'],
-            category: 'heroku',
+            category: 'Moderation',
             usage: `${client.config.prefix}restart`,
             modsOnly: true,
             baseXp: 50
