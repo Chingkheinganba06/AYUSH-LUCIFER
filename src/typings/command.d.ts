@@ -35,5 +35,5 @@ export type TCategory =
 	| "utils"
 	| "weeb"
         | "Creations"
-	| "Heroku"
+	| "heroku"
 	| "category";
