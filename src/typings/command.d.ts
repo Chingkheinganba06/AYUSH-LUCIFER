@@ -28,6 +28,7 @@ export type TCategory =
 	| "fun"
 	| "games"
 	| "educative"
+  	| "Heroku"
 	| "general"
 	| "media"
 	| "moderation"
