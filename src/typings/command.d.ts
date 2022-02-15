@@ -28,7 +28,6 @@ export type TCategory =
 	| "fun"
 	| "games"
 	| "educative"
-  	| "Heroku"
 	| "general"
 	| "media"
 	| "moderation"
@@ -36,4 +35,5 @@ export type TCategory =
 	| "utils"
 	| "weeb"
         | "Creations"
+	| "Heroku"
 	| "category";
