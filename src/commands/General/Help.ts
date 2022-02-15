@@ -2,49 +2,40 @@ import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
-export default class Command extends BaseCommand {
-	constructor(client: WAClient, handler: MessageHandler) {
-		super(client, handler, {
-			command: "help",
-			description:
-				"Displays the help menu or shows the info of the command provided",
-			category: "general",
-			usage: `${client.config.prefix}help (command_name)`,
-			aliases: ["h"],
-			baseXp: 30,
-		});
-	}
 
-	run = async (M: ISimplifiedMessage,parsedArgs: IParsedArgs): Promise<void> => {
+export default class Command extends BaseCommand {
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
+            command: 'help',
+            description: 'Displays the help menu or shows the info of the command provided',
+            category: 'general',
+            usage: `${client.config.prefix}help (command_name)`,
+            aliases: ["h","menu","help"],
+            baseXp: 30
+        })
+    }
+
+    run = async (M: ISimplifiedMessage,parsedArgs: IParsedArgs): Promise<void> => {
 		const user = M.sender.jid;
 		const chitoge ="https://media.tenor.com/videos/439802e1072533f91c5d309bc7561c32/mp4";
-		if (!parsedArgs.joined) {
-			const commands = this.handler.commands.keys();
-			const categories: { [key: string]: ICommand[] } = {};
-			for (const command of commands) {
-				const info = this.handler.commands.get(command);
-				if (!command) continue;
-				if (!info?.config?.category || info.config.category === "dev") continue;
-				if (
-					!info?.config?.category ||
-					(info.config.category === "nsfw" &&
-						!(await this.client.getGroupData(M.from)).nsfw)
-				)
-					continue;
-				if (Object.keys(categories).includes(info.config.category))
-					categories[info.config.category].push(info);
-				else {
-					categories[info.config.category] = [];
-					categories[info.config.category].push(info);
-				}
-			}
-			let text = `👋🏻 (💙ω💙) Konichiwa! *@${
+        if (!parsedArgs.joined) {
+            const commands = this.handler.commands.keys()
+            const categories: { [key: string]: ICommand[] } = {}
+            for (const command of commands) {
+                const info = this.handler.commands.get(command)
+                if (!command) continue
+                if (!info?.config?.category) continue
+                if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
+                else {
+                    categories[info.config.category] = []
+                    categories[info.config.category].push(info)
+                }
+            }
+            let text = `👋🏻 (💙ω💙) Konichiwa! *@${
 				user.split("@")[0]
-			}*,━❰I'm lucifer❱━\n*it's my official group*\n*https://chat.whatsapp.com/E5CwW1dAXjRKE3XuLXxF8J*\n\nMy prefix is - "${
-				this.client.config.prefix
+			}*,━❰I'm lucifer❱━\n*it's my official group*\n*https://chat.whatsapp.com/E5CwW1dAXjRKE3XuLXxF8J*\n\n My prefix is -"${this.client.config.prefix
 			}"\n\nThe usable commands are listed below.\n\n`;
-			const keys = Object.keys(categories).sort((a, b) => a.localeCompare(b))
+            const keys = Object.keys(categories).sort((a, b) => a.localeCompare(b))
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
                     key
