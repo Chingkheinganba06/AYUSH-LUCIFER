@@ -45,4 +45,3 @@ export default class Command extends BaseCommand {
 		);
 	};
 }
-© 2022 GitHub, Inc.
