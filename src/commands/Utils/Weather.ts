@@ -10,9 +10,9 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "weather",
-			aliases: ["wthr"],
+			aliases: ["wthr","wth"],
 			description: "Gives you the weather of the given state or city. ",
-			category: "educative",
+			category: "utils",
 			usage: `${client.config.prefix}weather [place_name]`,
 			baseXp: 50,
 		});
@@ -31,11 +31,11 @@ export default class Command extends BaseCommand {
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			.then((response: any) => {
 				// console.log(response);
-				const text = `🔎 Weather for the place *${place}* found\n\n🌸 *Place:* ${response[0].location.name}*\n🌈 *Weather: ${response[0].current.skytext}*\n🌡️ *Temperature: ${response[0].current.temperature}°C*\n💦 *Humidity: ${response[0].current.humidity}%*\n🎐 *Wind:* ${response[0].current.windspeed}*\n`;
+				const text = `🔎Weather for the place*${place}*found\n\n🌸*Place:*{response[0].location.name}*\n🌈 *Weather: ${response[0].current.skytext}*\n🌡️ *Temperature: ${response[0].current.temperature}°C*\n💦*Humidity: ${response[0].current.humidity}%*\n🎐 *Wind:* ${response[0].current.windspeed}*\n`;
 				M.reply(text);
 			})
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
-			.catch((err: any) => {
+			.catch((err:any) => {
 				M.reply(`No such place name.`);
 			});
 	};
