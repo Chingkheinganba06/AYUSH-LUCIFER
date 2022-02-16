@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
 			command: "animeboy",
-			description: "sends pics of lumine",
+			description: "sends pics of anime boy",
 			category: "weeb",
                         aliases: ["ab","at"],
 			usage: `${client.config.prefix}lumine`,
@@ -28,6 +28,8 @@ export default class Command extends BaseCommand {
           "https://wallpapercave.com/wp/wp6640451.jpg",
           "https://wallpapercave.com/wp/wp8879964.jpg",
           "https://wallpapercave.com/wp/wp7220516.jpg",
+	  "https://wallpapercave.com/wp/wp5188178.jpg",
+	  "https://wallpapercave.com/wp/wp6194382.jpg",
 		];
 		const selected = images[Math.floor(Math.random() * images.length)];
 		const text = `💖(uWu)💖\n\n`;
