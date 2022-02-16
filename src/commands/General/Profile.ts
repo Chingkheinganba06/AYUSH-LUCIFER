@@ -81,7 +81,7 @@ export default class Command extends BaseCommand {
 				} else if (exp < 2000000) {
 					level = 10;
 				} else {
-					level = 'infinity';
+					level = 1000000;
 				}
         await M.reply(
             await request.buffer(
