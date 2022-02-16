@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(
 				`${
 					M.groupMetadata?.subject || "*EVERYONE*"
-				}\n*ALL YOU STUPID ASSHOLES*\n*[come here and talk]*`,
+				}\n*WHY SO SILENCE HERE ?*\n*[come here guys and talk ]*\n*[why are you in gc if you are not talking]*`,
 				undefined,
 				undefined,
 				M.groupMetadata?.participants.map((user) => user.jid)
@@ -49,7 +49,7 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(
 				`${
 					M.groupMetadata?.subject || "*EVERYONE*"
-				}\n*ALL YOU STUPID ASSHOLES*\n*[come here and talk]*`,
+				}\n*WHY SO SILENCE HERE ?*\n*[come here guys and talk ]*\n*[why are you in gc if you are not talking]*`,
 				undefined,
 				undefined,
 				M.groupMetadata?.participants.map((user) => user.jid)
