@@ -19,13 +19,13 @@ export default class EventHandler {
         const text = add
 					? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
 							group.desc
-					  }\n\nHope you follow the rules and have fun!\n\n${event.participants
+					  }\n\nNOT FOLLOWING THE RULES LEADS YOOU TO YOUR TERMINATION\n\n${event.participants
 							.map((jid) => `@${jid.split("@")[0]}`)
 							.join(", ")}`
 					: event.action === "remove"
 					? `Goodbye *@${
 							event.participants[0].split("@")[0]
-					  }* 👋🏻, GOODBYE HOPE YOU COME BACK WITH YOUR SHITY ASS.`
+					  }* 👋🏻, GOODBYE HOPE YOU COME BACK (PLEASE DONT'T).`
 					: `Ara Ara, looks like *@${
 							event.participants[0].split("@")[0]
 					  }* got ${this.client.util.capitalize(event.action)}d${
