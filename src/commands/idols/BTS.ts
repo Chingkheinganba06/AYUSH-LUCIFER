@@ -47,7 +47,7 @@ export default class Command extends BaseCommand {
     "https://wallpapercave.com/wp/wp5016696.jpg",
 		];
 		const selected = images[Math.floor(Math.random() * images.length)];
-		const text = `💖(uWu)💖\n\n`;
+		const text = `(control your smirk)\n\n`;
 			this.client.sendMessage( M.from, { url: selected }, MessageType.image, {
 				caption: `${text}`,
 			}
