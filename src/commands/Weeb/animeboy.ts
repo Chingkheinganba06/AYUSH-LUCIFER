@@ -21,15 +21,15 @@ export default class Command extends BaseCommand {
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const images = [
 			"https://wallpapercave.com/w/wp6139612.jpg",
-          "https://wallpapercave.com/w/wp8879925.jpg",
-          "https://wallpapercave.com/w/wp6139586.jpg",
-          "https://wallpapercave.com/wp/wp6139586.jpg",
-          "https://wallpapercave.com/wp/wp10436946.jpg",
-          "https://wallpapercave.com/wp/wp6640451.jpg",
-          "https://wallpapercave.com/wp/wp8879964.jpg",
-          "https://wallpapercave.com/wp/wp7220516.jpg",
-	  "https://wallpapercave.com/wp/wp5188178.jpg",
-	  "https://wallpapercave.com/wp/wp6194382.jpg",
+   		        "https://wallpapercave.com/w/wp8879925.jpg",
+          		"https://wallpapercave.com/w/wp6139586.jpg",
+          		"https://wallpapercave.com/wp/wp6139586.jpg",
+         	       	 "https://wallpapercave.com/wp/wp10436946.jpg",
+          		"https://wallpapercave.com/wp/wp6640451.jpg",
+          		"https://wallpapercave.com/wp/wp8879964.jpg",
+          		"https://wallpapercave.com/wp/wp7220516.jpg",
+	  		"https://wallpapercave.com/wp/wp5188178.jpg",
+	  		"https://wallpapercave.com/wp/wp6194382.jpg",
 		];
 		const selected = images[Math.floor(Math.random() * images.length)];
 		const text = `💖(uWu)💖\n\n`;
