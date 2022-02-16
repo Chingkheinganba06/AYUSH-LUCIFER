@@ -11,8 +11,8 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "animeboy",
 			description: "sends pics of lumine",
-			category: "Weeb",
-      aliases:["ab","at"]
+			category: "weeb",
+                        aliases: ["ab","at"],
 			usage: `${client.config.prefix}lumine`,
 			baseXp: 10,
 		});
