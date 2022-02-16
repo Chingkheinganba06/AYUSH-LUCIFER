@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
 			command: "lumine",
 			description: "sends pics of lumine",
 			category: "weeb",
+			aliases : ["lumine","travelor","lum"],
 			usage: `${client.config.prefix}lumine`,
 			baseXp: 10,
 		});
